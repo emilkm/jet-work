@@ -1,0 +1,37 @@
+{
+  "name": "jet-work",
+  "version": "0.0.1",
+  "description": "Webix Jet Work",
+  "main": "sources/app.js",
+  "scripts": {
+    "build": "webpack --env.production false",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "webix",
+    "jet"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "terser": "^4.1.2",
+    "terser-webpack-plugin": "^1.3.0",
+    "uglify-es": "^3.3.9",
+    "webix": "^7.3.0",
+    "webix-jet": "^2.1.3",
+    "webix-polyglot": "^2.3.0"
+  }
+}

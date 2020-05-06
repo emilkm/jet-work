@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es2015", "dom"],
+    "sourceMap": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["sources/*"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "sources/**/*.ts"
+  ],
+  "files": [
+    "node_modules/webix/types/webix.global.d.ts"
+  ]
+}

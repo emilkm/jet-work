@@ -1,0 +1,200 @@
+.webixappstart{
+    opacity:0;
+}
+.webixapp{
+    transition: opacity 500ms;
+    opacity: 1;
+}
+.webix_layout_clean {
+    background: white;
+}
+
+/*data loading status*/
+.status_good, .status_error, .status_saving{
+	text-align: center;
+	margin-left:-12px;
+}
+.status_error{
+	color:red;
+}
+.status_good{
+	color:green;
+}
+
+/*login form*/
+.invalid_login .webix_header > div{
+    background: #FC3636;
+    transition: background 1s;
+}
+.invalid_login{
+    -webkit-animation: formshake .5s linear;
+}
+@-webkit-keyframes formshake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+/*siberia theme*/
+.webix_layout_toolbar.webix_toolbar.form-bottom-bar{
+	background: #34495E;
+}
+
+.center{
+	text-align: center;
+}
+
+.app-left-panel .webix_menu .webix_list_item.spacer:hover{
+	background: transparent;
+	cursor:default;
+}
+.webixapp{
+	background: #34495e;
+}
+.webix_layout_clean{
+	background: white;
+}
+
+/* unradius borders */
+.webix_menu {
+	border-radius: 0px;
+}
+
+/*header*/
+.app_header,
+.app_header .webix_view,
+.app_header .webix_menu .webix_list_item{
+	background: #34495e;
+	color:#ddd;
+}
+.app_header .webix_menu .webix_list_item.webix_selected{
+	color:#fff;
+}
+.app_header .webix_menu .webix_list_item:hover{
+	background-color: #f5f5f5;
+	color: #000;
+}
+.app_header .webix_header .webix_template{
+	background-color: #34495e;
+	border-bottom:1px solid white;
+	text-align: center;
+	padding-left:0px;
+}
+
+
+/*content*/
+.app_wrapper{
+	border-top-left-radius:4px;
+}
+
+.app_content{
+	background: #fff;
+}
+
+/* forms */
+.app_form_header {
+    background-color: #d2e3ef;
+    /*border-bottom: none !important;*/
+}
+
+.app_form_body {
+    border: 1px solid #d2e3ef;
+}
+
+.app_form_message .webix_template .title {
+    color: #3498db;
+    display: block;
+    /*line-height: 16px;*/
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.app_form_message .webix_template .text {
+    border-left: 2px solid #63b4ea;
+    display: block;
+    background-color: #fcfcfc;
+    padding: 10px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+.webix_info div, .webix_success div {
+    background: #63b4ea;
+}
+
+.app_form_message .webix_template .info {
+    border-left: 2px solid #63b4ea;
+}
+
+.app_form_message .webix_template .info:before {
+    content: "Information";
+    color: #63b4ea;
+    display: block;
+    /*line-height: 20px;*/
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.app_form_message .webix_template .warning {
+    border-left: 2px solid #ea9963;
+}
+
+.app_form_message .webix_template .warning:before {
+    content: "Warning";
+    color: #ea9963;
+    display: block;
+    /*line-height: 20px;*/
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.webix_error div, .webix_failure div {
+    background: #ea6371;
+}
+
+.app_form_message .webix_template .error {
+    border-left: 2px solid #ea6371;
+}
+
+.app_form_message .webix_template .error:before {
+    content: "Error";
+    color: #ea6371;
+    display: block;
+    /*line-height: 20px;*/
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.app_form_message .webix_template .webix_icon {
+    float: right;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.app_form_message .webix_template .action {
+    float: right;
+    text-align: center;
+    background: #3498db;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
