@@ -14,7 +14,7 @@ export default class page5 extends JetView {
 					cols: [
 						{
 							rows: [
-								{ view: 'combo', localId: 't1', name: 'type', label: 'Search Type', value: 1, width: 250,
+								{ view: 'combo', localId: 't1', name: 'type', label: 'T1', value: 1, width: 250,
 									options: [
 										{ id: 1, value: 'A' },
 										{ id: 2, value: 'B' },

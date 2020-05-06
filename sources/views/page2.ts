@@ -16,7 +16,7 @@ export default class page2 extends JetView {
 					cols: [
 						{
 							rows: [
-								{ view: 'combo', localId: 't1', name: 'type', label: 'Search Type', value: 1, width: 250,
+								{ view: 'combo', localId: 't1', name: 'type', label: 'T1', value: 1, width: 250,
 									options: [
 										{ id: 1, value: 'A' },
 										{ id: 2, value: 'B' },
@@ -26,7 +26,7 @@ export default class page2 extends JetView {
 						},
 						{
 							rows: [
-								{ view: 'text', localId: 'f1', name: 'f2', label: 'F1',
+								{ view: 'text', localId: 'f1', name: 'f2', label: 'F1', css: 'background: orange;',
 									on: {
 										onChange(nv) {
 											this.$scope.f1_change(nv);

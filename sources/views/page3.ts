@@ -2,21 +2,21 @@ import {JetView} from "webix-jet";
 
 export default class page3 extends JetView {
 
-
-
 	config() {
 		return { view: 'form', localId: 'frm', elementsConfig: { labelWidth: 90 },
 			rows: [
 				{ view: 'toolbar', localId: 'tbr',
 					cols: [
-						{ view: 'label', template: 'CLEAN: ui.combo  on: { onChange: (id) => this.t1_change(id) }' },
+						{ view: 'label', template: 'CLEAN: ui.combo  on: { onChange: (id) => this.t1_change(id) }' +
+								'</br>MLEAK: when you change T1 to B'
+						},
 					]
 				},
 				{
 					cols: [
 						{
 							rows: [
-								{ view: 'combo', localId: 't1', name: 'type', label: 'Search Type', value: 1, width: 250,
+								{ view: 'combo', localId: 't1', name: 'type', label: 'T1', value: 1, width: 250,
 									options: [
 										{ id: 1, value: 'A' },
 										{ id: 2, value: 'B' },
