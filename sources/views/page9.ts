@@ -30,6 +30,6 @@ export default class page9 extends JetView {
 	}
 
 	lst_selectedItemChange(id) {
-
+		const x = 0;
 	}
 }

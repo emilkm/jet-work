@@ -26,7 +26,7 @@ export default class page2 extends JetView {
 						},
 						{
 							rows: [
-								{ view: 'text', localId: 'f1', name: 'f2', label: 'F1', 
+								{ view: 'text', localId: 'f1', name: 'f2', label: 'F1',
 									on: {
 										onChange(nv) {
 											this.$scope.f1_change(nv);

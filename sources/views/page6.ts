@@ -9,7 +9,7 @@ export default class page6 extends JetView {
 			rows: [
 				{ view: 'toolbar', localId: 'tbr',
 					cols: [
-						{ view: 'label', template: 'page1' },
+						{ view: 'label', template: ' ' },
 					]
 				},
 				{
@@ -46,9 +46,9 @@ export default class page6 extends JetView {
 						{ id: 'status', header: 'Status', width: 40, template: (item) => this.statusTemplate(item) },
 						{ id: '_',  header: '', fillspace: true }
 					],
-					tooltip: (item, config) => {
+					tooltip: function(item, config) {
 						if (',status,'.indexOf(`,${config.column.id},`) >= 0) {
-							return this.statusTooltip(item, config.column.id);
+							return this.$scope.statusTooltip(item, config.column.id);
 						} else {
 							return '';
 						}

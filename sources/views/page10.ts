@@ -1,6 +1,6 @@
 import {JetView} from "webix-jet";
 
-export default class page9 extends JetView {
+export default class page10 extends JetView {
 	config() {
 		return { view: 'form', localId: 'frm', elementsConfig: { labelWidth: 90 },
 			rows: [
@@ -32,6 +32,6 @@ export default class page9 extends JetView {
 	}
 
 	lst_selectedItemChange(id) {
-
+		const x = 0;
 	}
 }
