@@ -16,9 +16,29 @@ export default class page13 extends JetView {
 				{ view: 'datatable', localId: 'tbl', select: 'row', gravity: 3, editable: true, width: 600,
 					columns: [
 						{ id: 'id', header: 'Id', width: 100, editor: 'text' },
-						{ id: 'value', header: 'Value', fillspace: true, editor: 'popup' },
+						{ id: 'value', header: 'Value', fillspace: true, editor: 'popup',
+							suggest: {
+								body: {
+									view: 'textarea',
+									width: 500,
+									height: 300,
+									attributes: {
+										maxLength: 2000
+									}
+								}
+							}
+						},
 						{ id: '_',  header: '', fillspace: true }
-					]
+					],
+					rules: {
+						value: function(value) {
+							if (value && value.length > 2000) {
+								webix.alert('value must be less than 2000.');
+								return false;
+							}
+							return true;
+						},
+					},
 				},
 			]
 		};
