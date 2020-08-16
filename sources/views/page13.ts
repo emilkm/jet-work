@@ -23,7 +23,7 @@ export default class page13 extends JetView {
 									width: 500,
 									height: 300,
 									attributes: {
-										maxLength: 2000
+										maxlength: 2000
 									}
 								}
 							}
