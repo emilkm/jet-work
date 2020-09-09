@@ -25,7 +25,7 @@ export default class TopView extends JetView {
 			url = '/top/page1';
 		} else {
 			let num: number = parseInt(url.substr(8));
-			if (num == 13) {
+			if (num == 14) {
 				num = 0;
 			}
 			url = '/top/page' + (num + 1).toString();
